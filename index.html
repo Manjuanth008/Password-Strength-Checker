@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwordchecker</title>
+    <link rel="stylesheet" href="password.css">
+</head>
+<h1>PassWord StreNgth CheCker</h1>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="javascript:void(0);" id="popup-link">About Password Complexity</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h4 id="comment-msg">Please give a try &#128512;</h4>
+            <form action="#" method="post">
+                <input type="password" id="ourpassword" maxlength="10" placeholder="check your password" required>
+              
+                <div id="strength-bar-container">
+                    <div id="strength-bar" ></div>
+                </div>
+                <div class="pmcontainer">
+                    <div id="password-strength-text" class="password-message"></div>
+                </div>
+            </form>
+            <div class="strengthMeter"></div>
+        </div>
+    </div>
+    <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+            <span id="popup-close" class="popup-close">&times;</span>
+            <h2>Password Complexity</h2>
+            <p>Password complexity is the measure of how strong a password. A strong password is difficult for attackers to guess, while a weak password can be easily cracked. Here are some tips for creating strong passwords:</p>
+            <ul>
+                <li>* Generate/use the password conatining length at least 10 characters.</li>
+                <li>* Mix uppercase and lowercase letters.</li>
+                <li>* Include numbers (e.g., 1,2...9) and special characters (32 printable characters e.g., @, #, $, %, etc.).</li>
+                <li>* Avoid using common words, personal information, or dictionary words.</li>
+                <li>* Consider using a passphrase (a sequence of random words) for better security.</li>
+            </ul>
+            <h3>Examples Of Weak Passwords And Possible Outcome With The Combination:</h3>
+            <ul>
+                <li>a] password123</li>
+                <li>b] qwerty</li>
+                <li>c] 12345678</li>
+                <li>Caculation Expalination: Password length 6 with one character that is uppercase.
+                    So calculate the possiblity/risk of password with this combination => C^n. </li>
+                    <li>26^6 ---- 308 million possiblities.</li>
+            </ul>
+            <h3>Examples Of Strong Passwords And Possible Outcome With The Combination:</h3>
+            <ul>
+                <li>a] f$Hp7Q&x!t8z</li>
+                <li>b] Tr_1k*Q@98&s7</li> 
+                <li>Caculation Expalination: Password length 10 with 94 characters conatining upper+lower+no+special characters.
+                    So calculate the possiblity/risk of password with this combination => C^n. </li>
+                    <li>94^10 ---- 53 quintillion possiblities(53 fallowed by 18 zeros).</li>
+            </ul>
+            <p>Use a password manager to securely store and manage your passwords!</p>
+
+        </div>
+        </div>
+    <script src="./test.js"></script>
+</body>
+</html>
