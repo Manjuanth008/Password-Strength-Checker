@@ -1,5 +1,5 @@
 # Password Strength Checker 🔐
-Welcome to the Password Strength Checker project! This powerful tool is designed to help you assess the strength of your passwords, Ensure your online security & to explain the awareness about the first level of authentication.
+Welcome to the Password Strength Checker project! This powerful tool is designed to help you assess the strength of your passwords, Ensure online security to explain the importance about the first level of authentication & awareness about the password complexity.
 
 ## Project Purpose 📋
 
@@ -15,7 +15,6 @@ We've used industry-standard design tools to create an intuitive and visually ap
 - CSS
 - JavaScript
 - jQuery
-- Bootstrap
 
 ## Project Live Location 🌐
 
